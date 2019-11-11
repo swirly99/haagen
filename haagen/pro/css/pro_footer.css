@@ -1,0 +1,202 @@
+*{border: 0;margin: 0}
+ul{list-style: none;margin: 0;padding: 0}
+a{text-decoration: none}
+.footer_font{   /*设置footer中字体的公共样式*/
+    color: #fff;
+    font-size: 12px;
+}
+#footer>.footer_top>.top{/*设置footer上半部分中上部分大div的样式*/
+    width: 1024px;
+    padding-top: 70px;
+    padding-bottom: 32px;
+    margin: auto;
+}
+#footer>.footer_top>.top>.left{/*设置footer上半部分中上左边div的样式*/
+    float: left;
+    margin-right: 70px;
+}
+#footer>.footer_top>.top>.left>h2{/*设置footer上半部分中上左边div中标题的样式*/
+    font-size: 42px;
+    color: #600624;
+    padding-bottom: 8px;
+}
+#footer>.footer_top>.top>.left>p{/*设置footer上半部分中上左边div中文字的样式*/
+    font-size: 16px;
+}
+#footer>.footer_top>.top>.right{/*设置footer上半部分中上右边div的样式*/
+    float: left;
+}
+#footer>.footer_top>.top>.right>ul>li{/*设置footer上半部分中上右边div中ul下li的样式*/
+    float: left;
+    width: 78px;
+    height: 78px;
+    margin: 0 28px 0 0;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+}
+#footer>.footer_top>.top>.right>ul>li>a>img{/*设置footer上半部分中上右边div中ul下li中图片的样式*/
+    width: 100%;
+}
+#footer>.footer_top>.top:after{/*整个footer上半部分的上部分添加div清除浮动防止高度坍塌*/
+    content: "";
+    display: block;
+    clear: both;
+}
+#footer>.footer_top>.btm{   /*设置footer上半部分中下部分大div的样式*/
+    width: 1024px;
+    text-align: center;
+    margin: 0 auto 30px;
+}
+#footer>.footer_top>.btm>ul>li{   /*设置footer上半部分中下部分中li的样式*/
+     float: left;
+}
+#footer>.footer_top>.btm>ul>li+li{ /*设置footer上半部分中下部分中li的样式*/
+     margin-left: 10px;
+}
+#footer>.footer_top>.btm>ul>li>a>.bg{ /*设置footer上半部分中下部分中li中背景div的样式*/
+    padding-left: 20px;
+    height: 90px;
+    width: 310px;
+    background: #f5f5f5;
+    position: relative;
+}
+#footer>.footer_top>.btm>ul>li>a>.bg>div:first-child{/*设置footer上半部分中下部分中li中存放图片的div的公共样式*/
+    background-size:100%;
+    width: 59px;
+    height: 59px;
+    margin-right: 15px;
+    float: left;
+    position: relative;
+    margin-top: -30px;
+    top: 50%;
+}
+#footer>.footer_top>.btm>ul>li>a>.bg>.icon_faq{/*设置footer上半部分中下部分中li中存放的contact图片*/
+    background: url("../img/products/footer/icon_contact.png") no-repeat;
+}
+#footer>.footer_top>.btm>ul>li>a>.bg>.icon_mail{
+    background: url("../img/products/footer/icon_mail.png") no-repeat;/*设置footer上半部分中下部分中li中存放的mail图片*/
+}
+#footer>.footer_top>.btm>ul>li>a>.bg>.icon_shop{
+    background: url("../img/products/footer/icon_shop.png") no-repeat;/*设置footer上半部分中下部分中li中存放的shop图片*/
+}
+#footer>.footer_top>.btm>ul>li>a>.bg>.wenzi{/*设置footer上半部分中下部分中li中文字的公共样式*/
+    height: 90px;
+    float: left;
+    position: relative;
+    margin-top: -20px;
+    top: 50%;
+}
+#footer>.footer_top>.btm>ul>li>a>.bg>.wenzi>p:first-child{/*设置footer上半部分中下部分中li中标题样式*/
+    font-size: 18px;
+    font-weight: bold;
+    color: #600624;
+}
+#footer>.footer_top>.btm>ul>li>a>.bg>.wenzi>p:nth-child(2){/*设置footer上半部分中下部分中li中文字样式*/
+    font-size: 12px;
+    color: #000;
+    text-align: left;
+}
+#footer>.footer_top>.btm:after{/*为整个footer上半部分中的下部分添加div清除浮动防止高度坍塌*/
+    content: "";
+    display: block;
+    clear: both;
+}
+#footer>.footer_top>.to_top{/*设置footer上半部分中返回顶部的div样式*/
+    margin-bottom: 18px;
+    position: relative;
+}
+#footer>.footer_top>.to_top>a>.bg{/*设置footer上半部分中返回顶部的div中img的背景样式*/
+    width: 28px;
+    height: 28px;
+    border-radius: 33px;
+    background-color: #b4b4b4;
+    float: right;
+}
+#footer>.footer_top>.to_top>a>.bg>img{/*设置footer上半部分中返回顶部的div中img的样式*/
+    width: 100%;
+}
+#footer>.footer_top>.to_top>a>p{/*设置footer上半部分中返回顶部的div中文字的样式*/
+    font-size: 16px;
+    color: #666;
+    float: right;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+#footer>.footer_top>.to_top:after{/*为整个footer的上半部分添加div清除浮动防止高度坍塌*/
+    content: "";
+    display: block;
+    clear: both;
+}
+#footer>.footer_top:after{/*为整个footer的上半部分添加div清除浮动防止高度坍塌*/
+    content: "";
+    display: block;
+    clear: both;
+}
+#footer>.footer_bottom{  /*设置footer下半部分的背景颜色*/
+    background-color: #600624;
+}
+#footer>.footer_bottom>.inner{/*设置footer下半部分中总内容区域的宽度，样式*/
+    width: 1024px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    position: relative;
+}
+#footer>.footer_bottom>.inner:after{ /*为整个footer的下半部分添加div清除浮动防止高度坍塌*/
+    content: "";
+    display: block;
+    clear: both;
+}
+#footer>.footer_bottom>.inner>.content{/*设置footer下半部分中内容区域(ul+底部)的宽度，样式*/
+    width: 844px;
+    float: right;
+    background-color: #600624;
+}
+#footer>.footer_bottom>.inner>.content>.top>div{/*设置footer下半部分中每一个包裹ul的div左浮动，为一行显示*/
+    float: left;
+    margin-right: 30px;
+}
+#footer>.footer_bottom>.inner>.content>.top>div:last-child{/*设置footer中下半部分最后一个包裹ul的无右边距*/
+    margin-right: 0;
+}
+#footer>.footer_bottom>.inner>.content>.top:after{/*为footer下半部分中上半部分的ul导航添加div清除浮动防止高度坍塌*/
+    content: "";
+    display: block;
+    clear: both;
+}
+#footer>.footer_bottom>.inner>.content>.top>div>p{/*设置footer下半部分中ul上方标题的样式*/
+    margin-bottom: 20px;
+}
+#footer>.footer_bottom>.inner>.content>.top>div>p>a{/*设置footer下半部分中ul上方标题的样式*/
+    color: #fff;
+    font-size: 16px;
+}
+#footer>.footer_bottom>.inner>.content>.top>.ul_center>.center_left{/*设置footer下半部分中第二个ul中的两个ul中左边ul的样式*/
+    float: left;
+    margin-right: 30px;
+}
+#footer>.footer_bottom>.inner>.content>.top>.ul_center>.center_right{/*设置footer下半部分中第二个ul中的两个ul中右边ul的样式*/
+    float: right;
+}
+#footer>.footer_bottom>.inner>.content>.btm{/*设置foooter下半部分中ul下方的指示和版权信息所在div的样式*/
+    width: 100%;
+    margin-top: 40px;
+}
+#footer>.footer_bottom>.inner>.content>.btm>ul>li{/*设置foooter下半部分中ul下方的指示栏的li样式*/
+    display: block;
+    width: auto;
+    height: auto;
+    margin-right: 18px;
+    float: left;
+}
+#footer>.footer_bottom>.inner>.content>.btm>p{/*设置foooter下半部分中ul下方的版权信息的样式*/
+    position: absolute;
+    right: 0;
+}
+#footer>.footer_bottom>.inner>.footer_logo{/*设置foooter下半部分中logo的样式*/
+    width: 144px;
+    margin: 0;
+}
+#footer>.footer_bottom>.inner>.footer_logo>a>img{/*设置foooter下半部分中logo图片的样式*/
+    width: 100%;
+}

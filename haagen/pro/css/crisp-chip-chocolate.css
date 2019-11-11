@@ -1,0 +1,281 @@
+*{margin: 0;padding: 0;}
+.my_font{                       /*����ҳ����ʹ�õ�����*/
+    color: #600624;
+    font-size: 19px;
+    line-height: 2em;
+    font-weight: bold;
+}
+body{
+    background:#eed6c8 url("../img/crisp-chip-chocolate/bg.jpg") no-repeat  top;/*�������Ϸ��ı���ͼƬ*/
+}
+#header{                                               /*����ͷ����ȣ�������ʾ*/
+    width: 1100px;
+    margin: auto;
+}
+#header>.head_top{                               /*������logo*/
+    margin-top: 10px;
+}
+#header>.head_top>a>.logo{                               /*������logo*/
+    float: left;
+}
+#header>.head_top>a:hover{/* ���logo�������ʱ״̬*/
+    opacity: 0.5;
+}
+#header>.head_top>.menu_img:hover{                     /* �Ҳ�˵�ѡ���������ʱ״̬*/
+    opacity: 0.5;
+}
+#header>.head_top>.menu_img{                       /*����Ҳ�˵�ѡ��ͼƬ*/
+    position: relative;
+    float: right;
+    width: 50px;
+    height: 62px;
+    z-index: 10;
+    background-image: url("../img/zong/icon_menu_white.png");/*ͨ������ͼƬ�ķ�ʽ��Ӱ�ť��������ͼ*/
+}
+#header>.head_top:after{    /*��ֹ�߶�̮��*/
+    content: "";
+    display: block;
+    clear: both;
+}
+#content{                               /* �����м���������Ŀ��*/
+    position: relative;
+    width: 1100px;
+    margin: auto;
+}
+#content_top>.top_chocochip{                 /*�����м����������ϲ����ж�������ͼƬ��λ��*/
+    position: absolute;
+    top:-72px;
+   left:800px;
+}
+#content_top>.title_img{                /*�����м����������ϲ����б���ͼƬ��λ��*/
+    position: absolute;
+    left: 50%;
+    margin-left: -410px;
+    margin-top: 25px;
+}
+#content_top>.dish{                    /*�����м����������ϲ���������ͼƬ��λ��*/
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    top:190px;
+}
+#content_top>.chocochip_left{                /*�����м����������ϲ�������߻���ͼƬ��λ��*/
+    position: absolute;
+    left: -65px;
+    top:260px;
+}
+#content_top>.chocochip_right{                /*�����м����������ϲ������ұ߻���ͼƬ��λ��*/
+    position: absolute;
+    left: 780px;
+    top: 530px;
+}
+#content_center_top>.right{
+    position: absolute;                  /*�����м������������ϲ��ұ�ͼƬ��λ��*/
+    left: 510px;
+    top: 863px;
+}
+#content_center_top>.left{             /*�����м������������ϲ�������ݵ�λ��*/
+    position: absolute;
+    left: 115px;
+    top: 730px;
+}
+#content_center_top>.left_img{             /*�����м������������ϲ���������������ͼƬ��λ��*/
+    position: absolute;
+    left: -165px;
+    top: 645px;
+}
+#content_center_top>.left>img{         /*�����м������������ϲ����ͼƬ�����ֵľ���*/
+    margin-bottom: 30px;
+}
+#content_center_cen>.left{
+    position: absolute;                  /*�����м����������м�����ͼƬ��λ��*/
+    left: -150px;
+    top: 1300px;
+}
+#content_center_cen>.right{             /*�����м����������м���ұ����ݵ�λ��*/
+    position: absolute;
+    left: 730px;
+    top: 1455px;
+}
+#content_center_cen>.right>img{         /*�����м����������м���ұ�ͼƬ�����ֵľ���*/
+    margin-bottom: 30px;
+}
+#content_center_but>.right_top{
+    position: absolute;                  /*�����м����������²��ұ��Ϸ�ͼƬ��λ��*/
+    right: -285px;
+    top: 1905px;
+}
+#content_center_but>.right_cen{
+    position: absolute;                  /*�����м����������²��ұ��Ϸ�ͼƬ��λ��*/
+    right: -487px;
+    top: 1795px;
+}
+#content_center_but>.right_btm{
+    position: absolute;                  /*�����м����������²��ұ��·�ͼƬ��λ��*/
+    right: 215px;
+    top: 2595px;
+}
+#content_center_but>.left{             /*�����м����������²�������ݵ�λ��*/
+    position: absolute;
+    left: 30px;
+    top: 2115px;
+}
+#content_center_but>.left>img{         /*�����м����������²����ͼƬ�����ֵľ���*/
+    margin-bottom: 30px;
+}
+#content_center_footer>h1{         /*�����м���������ײ�logoͼƬˮƽ����*/
+     text-align: center;
+}
+#content_center_footer>h1>.center_pic{   /*�����м���������ײ�logoͼƬ�߶ȡ�����ֱλ��*/
+    position: relative;
+    top: 2320px;
+}
+#content_center_footer>.center_pic_bg{  /*�����м���������ײ�logoͼƬ����ӰͼƬλ��*/
+    position: relative;
+    top: 2720px;
+    left: 425px;
+}
+#content_center_footer>.title_pic{  /*�����м���������ײ���������ͼƬλ��*/
+    position: relative;
+    top: 2330px;
+}
+#content_center_footer>.link_pic{   /*�����м���������ײ���������ͼƬλ��*/
+    position: relative;
+    top: 2370px;
+}
+#content_center_footer>.link_pic:hover{   /*�����м���������ײ���������ͼƬ�����ͣʱ��״̬*/
+    opacity: 0.7;
+}
+#content_center_footer>.chocolate_left{   /*�����м���������ײ���߻���ͼƬλ��*/
+    position: absolute;
+    top: 2660px;
+}
+#content_center_footer>.chocolate_right{   /*�����м���������ײ��ұ߻���ͼƬλ��*/
+    position: absolute;
+    top: 2870px;
+    right: 20px;
+}
+#footer{
+    position: relative;
+    top: 2470px;
+}
+#footer>.link_bg{              /*���õײ��ϲ��ֵ���������ɫ���߶Ⱥ��ڱ߾�*/
+    background-color: #600624;
+    padding: 40px;
+    margin-bottom: 70px;
+}
+#footer>.link_bg>.footer_link{  /*���õײ��ϲ��ֵ����е�����������,���ݾ���*/
+    margin: auto;
+    text-align: center;
+}
+#footer>.link_bg>.footer_link>ul{   /*���õײ��ϲ��ֵ����е��������򵼺�ͼƬul����ʽ,��blockת��δinline-blockʹ�����*/
+    position: relative;
+    margin-left: 450px;
+    margin-top: 35px;
+    list-style-type: none;/*ȥ��ulĬ�ϵ�Բ��*/
+    height: 203px;
+}
+#footer>.link_bg>.footer_link ul>li{      /*���õײ��ϲ��ֵ����е��������򵼺�ͼƬul��li����ʽ*/
+    position: relative;
+    float: left;
+    color: #fff;
+}
+#footer>.link_bg>.footer_link ul>li+li{      /*���õײ��ϲ��ֵ����е��������򵼺�ͼƬul��li����ʽ*/
+    margin-left: 30px;
+}
+.footer_link>ul>li>a>div{
+    width: 129px;
+    height: 129px;
+    top: 100px;
+    margin-bottom: 15px;
+}
+.footer_link>ul>li>a>.vanilla_close{             /* ����li��vanillaͼƬ�ر�״̬��Ĭ�ϱ���*/
+    background: url("../img/zong/lineup_vanilla_close.png");
+}
+.footer_link>ul>li>a>.vanilla_close:hover{       /* ����li��vanillaͼƬ�����ͣʱ�ı���*/
+    background: url("../img/zong/lineup_vanilla_open.png") no-repeat;
+}
+.footer_link>ul>li>a>.strawberry_close{           /* ����li��strawberryͼƬ�ر�״̬��Ĭ�ϱ���*/
+    background: url("../img/zong/lineup_strawberry_close.png");
+}
+.footer_link>ul>li>a>.strawberry_close:hover{     /* ����li��strawberryͼƬ�����ͣʱ�ı���*/
+    background: url("../img/zong/lineup_strawberry_open.png") no-repeat;
+}
+.footer_link>ul>li>a>.green_close{                /* ����li��greenͼƬ�ر�״̬��Ĭ�ϱ���*/
+    background: url("../img/zong/lineup_green_close.png");
+}
+.footer_link>ul>li>a>.green_close:hover{          /* ����li��greenͼƬ�����ͣʱ�ı���*/
+    background: url("../img/zong/lineup_green_open.png") no-repeat;
+}
+.footer_link>ul>li>a>.cookie_close{              /* ����li��cookieͼƬ�ر�״̬��Ĭ�ϱ���*/
+    background: url("../img/zong/lineup_cookie_close.png") no-repeat;
+}
+.footer_link>ul>li>a>.cookie_close:hover{        /* ����li��cookieͼƬ�����ͣʱ�ı���*/
+    background: url("../img/zong/lineup_cookie_open.png")  no-repeat;
+}
+.footer_link>ul>li>a>.macadamia_close{           /* ����li��macadamiaͼƬ�ر�״̬��Ĭ�ϱ���*/
+    background: url("../img/zong/lineup_macadamia_close.png");
+}
+.footer_link>ul>li>a>.macadamia_close:hover{     /* ����li��macadamiaͼƬ�����ͣʱ�ı���*/
+    background: url("../img/zong/lineup_macadamia_open.png")  no-repeat;
+}
+.footer_link>ul>li>a>.crisp_close{               /* ����li��crispͼƬ�ر�״̬��Ĭ�ϱ���*/
+    background: url("../img/zong/lineup_crisp_open.png") no-repeat;
+}
+/* .footer_link>ul>li>a>.crisp_close:hover{         ����li��crispͼƬ�����ͣʱ�ı���
+    background: url("../img/zong/lineup_crisp_open.png") no-repeat;
+}*/
+#footer>.link_bg>.footer_link>a:hover{
+    opacity: 0.7;
+}
+#footer>.footer_content{             /*���õײ������������*/
+    text-align: center;
+    margin: auto;
+}
+#footer>.footer_content>ul{          /*���õײ�����������ui�Ĺ�����ʽ*/
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+#footer>.footer_content>.top_ul{        /*���õײ����������е�һ��ul����ʽ*/
+    margin-bottom: 60px;
+}
+#footer>.footer_content>ul>li{        /*���õײ�����������li�Ĺ�����ʽ*/
+    float: left;
+    text-align: center;
+}
+#footer>.footer_content>.top_ul>li{     /*���õײ����������е�һ��ul��li����ʽ*/
+    width: 90px;
+}
+#footer>.footer_content>.bottom_ul>li>a{
+    text-decoration: none;
+    color: #600624;
+}
+#footer>.footer_content>.bottom_ul>li:hover{
+    opacity: 0.8;
+}
+#footer>.footer_content>.bottom_ul>li+li{   /*���õײ����������еڶ���ul��li����ʽ*/
+    margin-left: 40px;
+}
+#footer>.footer_content>.bottom_ul>li>a>.max_font{   /*���õײ����������еڶ���ul��li���������ʽ*/
+    color: #600624;
+    font-size: 16px;
+    font-weight: bold;
+}
+#footer>.footer_content>.min_font{   /*���õײ����������а�Ȩ�������ʽ*/
+    color: #600624;
+    font-size: 12px;
+}
+#footer>.footer_content>a>.top{       /*���õײ����������з��ض���ͼ�����ʽ*/
+    margin: 30px 0;
+}
+#footer>.footer_content>a>.top:hover{
+    opacity: 0.7;
+}
+#footer>.footer_content>.chocochip{       /*���õײ����������б���ͼ����ʽ*/
+    float: left;
+    margin-left: 350px;
+    margin-top: -260px;
+}
+

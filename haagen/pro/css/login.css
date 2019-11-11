@@ -1,0 +1,228 @@
+*{margin: 0;padding: 0}
+ul{list-style: none}
+li{float: left}
+a{text-decoration: none}
+#header{/*����ͷ���ܴ�С���̶�λ��*/
+    width: 100%;
+    height: 114px;
+    position: fixed;
+    background: #fff;
+    z-index: 2;
+}
+#header>.head_top{/*����ͷ��logo�Լ���¼ע����������Ĵ�С*/
+    width: 1000px;
+    height: 70px;
+    margin: auto;
+}
+#header>.head_top>a>img{/*����ͷ��logo��ʽ*/
+    width: 15%;
+    margin-top: 17px;
+    margin-left: -33px;
+    float: left;
+}
+#header>.head_top>a>img:hover{
+    width: 17%;
+}
+#header>.head_top>ul{/*����ͷ����¼ע����ʽ*/
+    margin-top: 26px;
+    float: right;
+}
+#header>.head_top>ul>li{/*����ͷ����¼ע����ʽ*/
+    padding-left: 16px;
+    font-size: 12px;
+}
+#header>.head_top>ul>li>a{/*����ͷ����¼ע����ʽ*/
+   color: #af0835;
+}
+#header>.head_btm{/*����ͷ���·���ɫ��������ʽ*/
+    width: 100%;
+    height: 40px;
+    background: #af0835;
+}
+#header:after{  /*��ͷ���·����һ��div��ֹ�߶�̮��*/
+    content: "";
+    display: block;
+    clear: both;
+}
+#content{/*������������������ڱ߾࣬Ϊͷ���Ĺ̶�λ��Ԥ��ռ�*/
+    padding-top: 114px;
+}
+#content>.title{/*���õ�������div��ʽ*/
+    width: 100%;
+    height: 52px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #EAEAEA;
+}
+#content>.title>.login{/*���õ�������div��ʽ*/
+    width: 700px;
+    height: 52px;
+    margin: auto;
+}
+#content>.title>.login>span{/*����<����ʽ*/
+    float: left;
+    font-size: 48px;
+    line-height: 52px;
+    color: #666;
+}
+#content>.title>.login>span>a{/*���á�*������ʽ*/
+    color: #000;
+}
+#content>.title>.login>p{/*���á����롱�������ʽ*/
+    text-align: center;
+    line-height: 52px;
+}
+#content>.cen{/*���������������ʽ*/
+    width: 400px;
+    margin: auto;
+}
+#content>.cen>p{/*������������������p����ʽ�������䡢����*/
+    font-size: 15px;
+    color: #222;
+    margin-bottom: 5px;
+}
+#content>.cen>#phone,#content>.cen>#upwd{/*��������������������������ʽ�������䡢����*/
+    height: 25px;
+    width: 386px;
+    padding: 6px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid #EAEAEA;
+}
+#content>.cen>.btn_login{/*�������������е��밴ť����ʽ*/
+    height: 40px;
+    width: 100%;
+    padding: 0 20px;
+    background-color: #af0835;
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#content>.cen>.forget{/*���������������������밴ť����ʽ*/
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+#content>.cen>.forget>a{/*���������������������밴ť��������ʽ����ʽ*/
+    color: #af0835;
+}
+#content>.cen>a>.rge{/*��������������ע�ᰴť����ʽ*/
+    height: 40px;
+    width: 100%;
+    padding: 0 20px;
+    border: 1px solid #af0835;
+    color: #af0835;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#content>.cen{/*�������������롰���ߡ�ֱ�ӵľ���*/
+    margin-bottom: 50px;
+}
+#content>.btm{/*�����·������ߡ�����������div��ʽ*/
+    width: 750px;
+    height: 90px;
+    margin: 0 auto 65px;
+}
+#content>.btm>.top{/*�����·���ʹ������SNS�ʻ���¼������div��ʽ*/
+    margin-bottom: 15px;
+    border-top: 1px solid #aaa;
+}
+#content>.btm>.top>span{/*�����·������ߡ���ʽ*/
+    position: relative;
+    left: 50%;
+    margin-left: -26px;
+    top:-13px;
+    padding: 0 10px;
+    background: #fff;
+    font-size: 15px;
+}
+#content>.btm>.top>p{/*�����·���ʹ������SNS�ʻ���¼����ʽ*/
+    font-size: 18px;
+    text-align: center;
+}
+#content>.btm>ul{/*�����·���ť��ʽ����twitter��Facebook*/
+    display: table;
+    margin: auto;
+}
+#content>.btm>ul>li{/*�����·���ť��ʽ����twitter��Facebook*/
+    width: 225px;
+    padding: 10px 0;
+    border-radius: 3px;
+    background-color: #55acee;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 22px;
+}
+#content>.btm>ul>li>a{/*�����·���ť��������ɫ����twitter��Facebook*/
+    color: #fff;
+}
+#content>.btm>ul>li>a>img{/*�����·���ť��ͼƬ����ɫ����twitter��Facebook*/
+    position: relative;
+    top:3px;
+    right: 3px;
+    width: 7%;
+}
+#content>.btm>ul>li:nth-child(2){/*����Facebook��ť�ı�����ɫ*/
+    background-color: #3b5998;
+}
+#footer{/*����footer������ʽ*/
+    width: 100%;
+    height: 233px;
+    background: #eee;
+}
+#footer>.top{/*����footer�з��ض�����div��ʽ*/
+    height: 40px;
+    margin-top: 20px;
+    background: #fff;
+}
+#footer>.top>p{/*����footer�з��ض���p��ʽ*/
+    width: 900px;
+    padding:0 50px;
+    margin: auto;
+    text-align: right;
+    font-size: 14px;;
+    line-height: 40px;
+}
+#footer>.top>p>a{/*����footer�з��ض�����������ɫ*/
+    color: #af0835;
+}
+#footer:before{/*��footer�ĵ�һ��div֮ǰ���div��ֹ�߶�̮��*/
+    content: "";
+    display: table;
+}
+#footer>.btm{/*����footer�г��˷��ض�����div֮��ı�����ɫ*/
+    background: #bb9e6a;
+}
+#footer>.btm>.logo{/*����footer��logodiv����ʽ*/
+    width: 1000px;
+    margin: auto;
+}
+#footer>.btm>.logo>img{/*����footer��logoͼƬ��ʽ*/
+    padding: 30px 0;
+    width: 15%;
+}
+#footer>.btm>.content{/*����footer�������������ʽ*/
+    width: 1000px;
+    margin: auto;
+    padding: 20px 0 35px;
+    border-top: 1px solid #fff;
+    color: #fff;
+    font-size: 12px;
+}
+#footer>.btm>.content>p{/*����footer����������p����ʽ������Ȩ*/
+   float: left;
+}
+#footer>.btm>.content>ul{/*����footer����������ul����ʽ������������|������˹�ձ�  |��˽����  |�罻ý������ */
+    float: right;
+}
+#footer>.btm>.content>ul>li{/*����footer����������li����ʽʹ�������ʾ*/
+    margin-left:10px;
+}
+#footer>.btm>.content>ul>li>a{/*����footer����������li�е��ı���ɫ��*/
+    color: #fff;
+}

@@ -1,0 +1,259 @@
+*{margin: 0;padding: 0;}
+.my_font{                       /*定义页面中使用的字体*/
+    color: #600624;
+    font-size: 19px;
+    line-height: 2em;
+    font-weight: bold;
+}
+body{
+    background:#fff1dc url("../img/macadamia-nut/bg.jpg") no-repeat  top;/*设置最上方的背景图片*/
+}
+#header{                                               /*设置头部宽度，居中显示*/
+    width: 1100px;
+    margin: auto;
+}
+#header>.head_top{                               /*添加左侧logo*/
+    margin-top: 10px;
+}
+#header>.head_top>a>.logo{                               /*添加左侧logo*/
+    float: left;
+}
+#header>.head_top>a:hover{/* 左侧logo鼠标移入时状态*/
+    opacity: 0.5;
+}
+#header>.head_top>.menu_img:hover{                     /* 右侧菜单选项鼠标移入时状态*/
+    opacity: 0.5;
+}
+#header>.head_top>.menu_img{                       /*添加右侧菜单选项图片*/
+    float: right;
+    width: 50px;
+    height: 62px;
+    background-image: url("../img/zong/icon_menu.png");/*通过背景图片的方式添加按钮——精灵图*/
+}
+#header>.head_top:after{    /*防止高度坍塌*/
+    content: "";
+    display: block;
+    clear: both;
+}
+#content{                               /* 设置中间内容区域的宽度*/
+    position: relative;
+    width: 1100px;
+    margin: auto;
+}
+#content_top>.title_img{                /*设置中间内容区域上部分中标题图片的位置*/
+    position: absolute;
+    left: 50%;
+    margin-left: -290px;
+    top:0;
+}
+#content_top>.dish{                    /*设置中间内容区域上部分中盘子图片的位置*/
+    position: absolute;
+    left: 50%;
+    margin-left: -700px;
+    top:-73px;
+    z-index: -1;
+}
+#content_center_top>.right{
+    position: absolute;                  /*设置中间内容区域最上层右边图片的位置*/
+    left: 570px;
+    top: 700px;
+}
+#content_center_top>.left{             /*设置中间内容区域最上层左边内容的位置*/
+    position: absolute;
+    left: 30px;
+    top: 670px;
+}
+#content_center_top>.left>img{         /*设置中间内容区域最上层左边图片与文字的距离*/
+    margin-bottom: 30px;
+}
+#content_center_cen>.left{
+    position: absolute;                  /*设置中间内容区域中间层左边图片的位置*/
+    left: -325px;
+    top: 1185px;
+}
+#content_center_cen>.right{             /*设置中间内容区域中间层右边内容的位置*/
+    position: absolute;
+    left: 655px;
+    top: 1420px;
+}
+#content_center_cen>.right>img{         /*设置中间内容区域中间层右边图片与文字的距离*/
+    margin-bottom: 30px;
+}
+#content_center_cen>.right>.right_img{         /*设置中间内容区域中间层右边图片与文字的距离*/
+    position: absolute;
+    left: 160px;
+    top: 235px;
+}
+#content_center_but>.right{
+    position: absolute;                  /*设置中间内容区域下层右边图片的位置*/
+    right: -100px;
+    top: 2030px;
+}
+#content_center_but>.left{             /*设置中间内容区域下层左边内容的位置*/
+    position: absolute;
+    left: 45px;
+    top: 2165px;
+}
+#content_center_but>.left>img{         /*设置中间内容区域下层左边图片与文字的距离*/
+    margin-bottom: 30px;
+}
+#content_center_footer>h1{         /*设置中间内容区域底部logo图片水平居中*/
+     text-align: center;
+}
+
+#content_center_footer>h1>.center_pic{   /*设置中间内容区域底部logo图片高度——垂直位置*/
+    position: relative;
+    top: 2240px;
+}
+#content_center_footer>.center_pic_bg{  /*设置中间内容区域底部logo图片的阴影图片位置*/
+    position: relative;
+    top: 2640px;
+    left: 425px;
+}
+#content_center_footer>.title_pic{  /*设置中间内容区域底部标题文字图片位置*/
+    position: relative;
+    top: 2250px;
+}
+#content_center_footer>.link_pic>a{   /*设置中间内容区域底部链接文字图片位置*/
+    position: relative;
+    top: 2290px;
+    z-index: 1;
+}
+#content_center_footer>.link_pic>a:hover{   /*设置中间内容区域底部链接文字图片鼠标悬停时的状态*/
+    opacity: 0.7;
+}
+#content_center_footer>.btm_macadamia{   /*设置中间内容区域底部左边花朵图片位置*/
+    position: absolute;
+    top: 2540px;
+    left: 180px;
+}
+#content_center_footer>.flower_right{   /*设置中间内容区域底部右边花朵图片位置*/
+    position: absolute;
+    top: 2650px;
+    right: 70px;
+}
+#footer{
+    position: relative;
+    top: 2390px;
+}
+#footer>.link_bg{              /*设置底部上部分导航背景颜色，高度和内边距*/
+    background-color: #600624;
+    padding: 40px;
+    margin-bottom: 70px;
+}
+#footer>.link_bg>.footer_link{  /*设置底部上部分导航中的内容区域宽度,内容居中*/
+    margin: auto;
+    text-align: center;
+}
+#footer>.link_bg>.footer_link>ul{   /*设置底部上部分导航中的内容区域导航图片ul的样式,将block转换未inline-block使其居中*/
+    position: relative;
+    margin-left: 450px;
+    margin-top: 35px;
+    list-style-type: none;/*去除ul默认的圆点*/
+    height: 203px;
+}
+#footer>.link_bg>.footer_link ul>li{      /*设置底部上部分导航中的内容区域导航图片ul中li的样式*/
+    position: relative;
+    float: left;
+    color: #fff;
+}
+#footer>.link_bg>.footer_link ul>li+li{      /*设置底部上部分导航中的内容区域导航图片ul中li的样式*/
+    margin-left: 30px;
+
+}
+.footer_link>ul>li>a>div{
+    width: 129px;
+    height: 129px;
+    top: 100px;
+    margin-bottom: 15px;
+}
+.footer_link>ul>li>a>.vanilla_close{             /* 设置li中vanilla图片关闭状态的默认背景*/
+    background: url("../img/zong/lineup_vanilla_close.png");
+}
+.footer_link>ul>li>a>.vanilla_close:hover{       /* 设置li中vanilla图片鼠标悬停时的背景*/
+    background: url("../img/zong/lineup_vanilla_open.png") no-repeat;
+}
+.footer_link>ul>li>a>.strawberry_close{           /* 设置li中strawberry图片关闭状态的默认背景*/
+    background: url("../img/zong/lineup_strawberry_close.png");
+}
+.footer_link>ul>li>a>.strawberry_close:hover{     /* 设置li中strawberry图片鼠标悬停时的背景*/
+    background: url("../img/zong/lineup_strawberry_open.png") no-repeat;
+}
+.footer_link>ul>li>a>.green_close{                /* 设置li中green图片关闭状态的默认背景*/
+    background: url("../img/zong/lineup_green_close.png");
+}
+.footer_link>ul>li>a>.green_close:hover{          /* 设置li中green图片鼠标悬停时的背景*/
+    background: url("../img/zong/lineup_green_open.png") no-repeat;
+}
+.footer_link>ul>li>a>.cookie_close{              /* 设置li中cookie图片关闭状态的默认背景*/
+    background: url("../img/zong/lineup_cookie_close.png") no-repeat;
+}
+.footer_link>ul>li>a>.cookie_close:hover{        /* 设置li中cookie图片鼠标悬停时的背景*/
+    background: url("../img/zong/lineup_cookie_open.png")  no-repeat;
+}
+.footer_link>ul>li>a>.macadamia_close{           /* 设置li中macadamia图片关闭状态的默认背景*/
+    background: url("../img/zong/lineup_macadamia_open.png")no-repeat;
+}
+/* .footer_link>ul>li>a>.macadamia_close:hover{     设置li中macadamia图片鼠标悬停时的背景
+    background: url("../img/zong/lineup_macadamia_open.png")  no-repeat;
+}*/
+.footer_link>ul>li>a>.crisp_close{               /* 设置li中crisp图片关闭状态的默认背景*/
+    background: url("../img/zong/lineup_crisp_close.png");
+}
+.footer_link>ul>li>a>.crisp_close:hover{         /* 设置li中crisp图片鼠标悬停时的背景*/
+    background: url("../img/zong/lineup_crisp_open.png") no-repeat;
+}
+#footer>.link_bg>.footer_link>a:hover{
+    opacity: 0.7;
+}
+#footer>.footer_content{             /*设置底部内容区域居中*/
+    text-align: center;
+    margin: auto;
+}
+#footer>.footer_content>ul{          /*设置底部内容区域中ui的公共样式*/
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+#footer>.footer_content>.top_ul{        /*设置底部内容区域中第一个ul的样式*/
+    margin-bottom: 60px;
+}
+#footer>.footer_content>ul>li{        /*设置底部内容区域中li的公共样式*/
+    float: left;
+    text-align: center;
+}
+#footer>.footer_content>.top_ul>li{     /*设置底部内容区域中第一个ul中li的样式*/
+    width: 90px;
+}
+#footer>.footer_content>.bottom_ul>li>a{
+    text-decoration: none;
+    color: #600624;
+}
+#footer>.footer_content>.bottom_ul>li:hover{
+    opacity: 0.8;
+}
+#footer>.footer_content>.bottom_ul>li+li{   /*设置底部内容区域中第二个ul中li的样式*/
+    margin-left: 40px;
+}
+#footer>.footer_content>.bottom_ul>li>a>.max_font{   /*设置底部内容区域中第二个ul中li中字体的样式*/
+    color: #600624;
+    font-size: 16px;
+    font-weight: bold;
+}
+#footer>.footer_content>.min_font{   /*设置底部内容区域中版权字体的样式*/
+    color: #600624;
+    font-size: 12px;
+}
+#footer>.footer_content>a>.top{       /*设置底部内容区域中返回顶部图标的样式*/
+    margin: 30px 0;
+}
+#footer>.footer_content>a>.top:hover{
+    opacity: 0.7;
+}
+#footer>.footer_content>.macadamia{       /*设置底部内容区域中背景图的样式*/
+    float: left;
+    margin-left: 1140px;
+    margin-top: -235px;
+}
+

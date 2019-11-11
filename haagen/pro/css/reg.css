@@ -1,0 +1,38 @@
+#content>.cen>#uname,#content>.cen>#email{/*�����û�����������ʽ*/
+    height: 25px;
+    width: 386px;
+    padding: 6px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid #EAEAEA;
+}
+#content>.cen>p>span{/*���á�*������ʽ*/
+    position: relative;
+    top: 2px;
+    left: 3px;
+    color: #ff0000;
+}
+#content>.title>.login>span>a{/*���á�*������ʽ*/
+    color: #000;
+}
+#content>.cen>p:first-child{/*���á�������Ŀ������ʽ*/
+    float: right;
+}
+#content>.cen>p:first-child>span{/*���á�������Ŀ��ǰ�ġ�*������ʽ*/
+    left: -3px;
+}
+#content>.cen .mini_font{/*���á����Ӣ���ֵȡ�����ʽ*/
+    font-size: 12px;
+    color: #aaa;
+    float: right;
+}
+#content>.cen>#woman{/*���á�Ů����ѡ��ť�롰�С���ѡ��ť֮��ľ���*/
+    margin-left: 20px;
+}
+#content>.cen>#accept_mail{/*���á������ʼ������Ϸ�ѡ��֮��ľ���*/
+    margin-top: 15px;
+}
+#content>.cen>.tips{/*����ע���ı��Ϸ��������ʼ���֮��ľ��롢ע������ִ�С*/
+    font-size: 12px;
+    margin-top: 15px;
+}

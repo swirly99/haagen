@@ -1,0 +1,601 @@
+*{border: 0;margin: 0}
+ul{list-style: none;margin: 0;padding:0;}
+a{text-decoration: none}
+#header>.bg{                          /*为最上方添加背景图片*/
+    height: 55px;
+    width: 100%;
+    background: url("../img/products/header_bg_pc.jpg");
+}
+#header>.title{              /*设置最上方标题栏的高度*/
+    height: 63px;
+    position: relative;
+    border-bottom: 1px solid #d5d5d5;
+}
+#header>.title>.logo{       /*设置最上方标题栏中间logo的位置*/
+    position: absolute;
+    margin: auto;
+    top: -32px;
+    left: 0;
+    right: 40px;
+    padding: 0;
+    width: 137px;
+}
+#header>.title>.logo:hover{       /*设置最上方标题栏中间logo鼠标悬停的样式*/
+    top: -28px;
+    left: 0;
+    right: 35px;
+}
+#header>.title>.logo>a>img{   /*设置最上方标题栏中间logo图片的显示大小*/
+    width: 100%;
+}
+#header>.title>.nav>ul{   /*设置最上方标题栏中导航栏中ul的样式*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    width: 774px;
+    margin:  -6px auto 0;
+    display: inline-block;
+}
+#header>.title>.nav>ul>li{   /*设置最上方标题栏中导航栏中ul下的li左浮动*/
+    float: left;
+}
+#header>.title>.nav>ul>li:nth-child(1){  /*设置最上方标题栏中导航栏中ul下的第一个li的样式*/
+    margin-right: 25px;
+    margin-top: 3px;
+}
+#header>.title>.nav>ul>li:nth-child(2){  /*设置最上方标题栏中导航栏中ul下的第二个li的样式*/
+    margin-right: 190px;
+}
+#header>.title>.nav>ul>li:nth-child(3){  /*设置最上方标题栏中导航栏中ul下的第三个li的样式*/
+    margin-right: 25px;
+}
+#header>.title>.nav>ul>li:nth-child(4){  /*设置最上方标题栏中导航栏中ul下的第四个li的样式*/
+
+}
+#header>.title>.nav>.icon{    /*设置最上方标题栏中导航栏中右边图标的总div的样式*/
+    position: absolute;
+    right: 250px;
+    left: auto;
+    top: 50%;
+    display: block;
+    margin-top: -14px;
+}
+#header>.title>.nav>.icon>ul>li{  /*设置最上方标题栏中导航栏中右边图标的公共样式*/
+    position: relative;
+    float: left;
+    margin-right: 16px;
+    height: 28px;
+}
+#header>.title>.nav>.icon>ul>.shopp{  /*设置最上方标题栏中导航栏中右边购物车图标的样式*/
+    background: url("../img/products/header_icon_01.png");
+    width: 32px;
+}
+#header>.title>.nav>.icon>ul>.help{  /*设置最上方标题栏中导航栏中右边帮助图标的样式*/
+    background: url("../img/products/header_icon_02.png");
+    width: 29px;
+}
+#header>.title>.nav>.icon>ul>.query{  /*设置最上方标题栏中导航栏中右边查询图标的样式*/
+    background: url("../img/products/header_icon_03.png");
+    width: 27px;
+}
+#header>.navigation{         /*设置头部导航栏的总div样式*/
+    position: relative;
+    height: 54px;
+    width: 100%;
+}
+/*#header>.navigation:after{
+    content: "";
+    display: block;
+    clear: both;
+}*/
+#header>.navigation>ul{     /*设置头部中导航栏中ul的样式*/
+    position: relative;
+    top: 12px;
+    left: 170px;
+}
+#header>.navigation>ul>li{    /*设置头部中导航栏中所有li的公共样式*/
+    float: left;
+    height: 50px;
+}
+#header>.navigation>ul>.newprmsg{  /*设置头部中导航栏中第一个li的样式——新产品信息*/
+    padding-left: 14px;
+    padding-right: 14px;
+    color: #fff;
+    width: 104px;
+}
+#header>.navigation>ul>.newprmsg>div{  /*设置头部中导航栏中第一个li新产品信息的背景样式*/
+    width: 76px;
+    height: 30px;
+    background: #b4b4b4;
+    margin-left: 90px;
+}
+#header>.navigation>ul>.newprmsg>div>a{ /*设置头部中导航栏中第一个li新产品信息的文字样式*/
+    color: #fff;
+    padding: 7px 8px;
+    font-size: 12px;
+    position: relative;
+    top: 2px;
+}
+#header>.navigation>ul>li{  /*设置头部中导航栏中li的公共样式*/
+    height: 50px;
+    margin-left: 45px;
+}
+#header>.navigation>ul>li>a>div>p{/*设置头部中导航栏中li中的文字的公共样式*/
+     position: relative;
+     left: 40px;
+     font-size: 12px;
+     color: #000;
+     padding:8px 0 8px 32px;
+}
+#header>.navigation>ul>.mini>a>div{  /*设置头部中导航栏中第二个li的背景——迷你杯*/
+    background: url("../img/products/icon_nav_01.png")no-repeat 100%;
+    background-size: 40%;
+}
+#header>.navigation>ul>.mini>a>div>p{  /*设置头部中导航栏中第二个li的文字新增加样式——迷你杯*/
+    color:#600624
+}
+#header>.navigation>ul>.xlpr>a>div{  /*设置头部中导航栏中第三个li的背景——系列产品*/
+    background: url("../img/products/icon_nav_08_off.png")no-repeat 100%;
+    background-size: 40%;
+}
+#header>.navigation>ul>.xlpr>a>div>p {/*设置头部中导航栏中第三个li中的文字新增加样式*/
+    position: relative;
+    left: 50px;
+}
+#header>.navigation>ul>.cps>a>div{  /*设置头部中导航栏中第四个li的背景——脆皮三明治*/
+    background: url("../img/products/icon_nav_02_off.png")no-repeat 100%;
+    background-size: 32%;
+}
+#header>.navigation>ul>.cps>a>div>p{  /*设置头部中导航栏中第四个li中的文字新增加样式——脆皮三明治*/
+    position: relative;
+    left: 65px;
+}
+#header>.navigation>ul>.cpt>a>div{  /*设置头部中导航栏中第五个li的背景——脆皮条*/
+    background: url("../img/products/icon_nav_03_off.png")no-repeat 100%;
+    background-size: 40%;
+    margin-left: 35px;
+}
+#header>.navigation>ul>.db>a>div{  /*设置头部中导航栏中第五个li的背景——多包*/
+    background: url("../img/products/icon_nav_04_off.png")no-repeat 100%;
+    background-size: 50%;
+    margin-left: 20px;
+}
+#header>.navigation>ul>.pt>a>div{  /*设置头部中导航栏中第五个li的背景——品脱*/
+    background: url("../img/products/icon_nav_05_off.png")no-repeat 100%;
+    margin-left: 16px;
+}
+#header>.navigation>ul>.pt>a>div>p{  /*设置头部中导航栏中第五个li文字新增加样式——品脱*/
+    position: relative;
+    left: 30px;
+}
+#header>.navigation>ul>.else>a>div{  /*设置头部中导航栏中第五个li的背景——其他产品*/
+    background: url("../img/products/icon_nav_07_off.png")no-repeat 100%;
+    background-size: 32%;
+}
+#header>.navigation>ul>.else>a>div>p{  /*设置头部中导航栏中第五个li文字新增加样式——其他产品*/
+    position: relative;
+    left: 56px;
+}
+#header>.navigation>ul>.gift>a>div{  /*设置头部中导航栏中第五个li的背景——礼品证书/礼品套装*/
+    background: url("../img/products/icon_nav_06_off.png")no-repeat 100%;
+    margin-left: -13px;
+}
+#header>.navigation>ul>.gift>a>div>p{  /*设置头部中导航栏中第五个li的背景——礼品证书/礼品套装*/
+    position: relative;
+    left: 114px;
+}
+#header>.navigation>ul>.all>a>div{  /*设置头部中导航栏中第五个li的背景——查看所有页面*/
+    border: 2px solid #eee;
+    margin-left: 100px;
+}
+#header>.navigation>ul>.all>a>div>p{  /*设置头部中导航栏中第五个li的背景——查看所有页面*/
+    position: relative;
+    left: -14px;
+}
+#content{      /*设置内容区域的背景颜色*/
+    background-color: #F5F5F5;
+}
+#content>.top{  /*设置内容上部分的大div的样式*/
+    height: 673px;
+    padding-bottom: 35px;
+}
+#content>.top>.title{  /*设置内容上部分的大div中标题div样式*/
+    position: relative;
+    background: #F9F5DA;
+    padding-bottom: 170px;
+    padding-top: 40px;
+    margin-bottom: 50px;
+}
+#content>.top>.title>ul>li{/*设置内容上部分的大div中标题小导航的li样式*/
+    float: left;
+    position: relative;
+    top: -30px;
+    margin-left: 10px;
+}
+#content>.top>.title>ul>li>a{/*设置内容上部分的大div中标题小导航的文字颜色——首页。。。*/
+    color: #000;
+}
+#content>.top>.title>p{/*设置内容上部分的大div中标题中的p中文字的公共样式——绿茶，成分信息*/
+    font-size: 38px;
+    color: #600624;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#content>.top>.title>p:nth-child(3){/*设置内容上部分的大div中标题中的p中文字的样式——迷你杯*/
+    font-size: 21px;
+}
+#content>.top>.title>img{/*设置内容上部分的大div中标题中的img的样式——抹茶图片*/
+    position:absolute;
+    width: 17%;
+    right: 370px;
+    top: 90px;
+}
+#content>.top>.img{  /*设置内容上部分的大div中imgdiv的样式*/
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+#content>.top>.img>img{  /*设置内容上部分的大div中img下的图片的样式*/
+    position: absolute;
+    left: 50%;
+    top: -200px;
+    margin-left: -175px;
+}
+#content>.top>.img:after{  /*div后添加diiv清除浮动防止高度坍塌*/
+    content: "";
+    display: block;
+    clear: both;
+}
+#content>.top>a>.btn{ /*设置内容上部分的大div中下方按钮的样式*/
+    width: 300px;
+    margin: 200px auto 0;
+    text-align: center;
+    padding: 20px 88px 22px 56px;
+    background: url("../img/products/icon_arrow.png") no-repeat 95% center;
+    border: 1px solid #C8C8C8;
+    font-size: 16px;
+    color: #000;
+}
+#content>.top>a>.btn:hover{ /*设置内容上部分的大div中下方按钮中鼠标悬停的样式*/
+    background-color: #600624;
+    color: #fff;
+}
+#content>.cen_table>div{ /*设置中间表格区域中所有表格的公共样式*/
+    margin: 0 auto 70px;
+    width: 1100px;
+}
+#content>.cen_table>div:last-child{ /*设置中间表格区域中所有表格的公共样式*/
+    margin-bottom: 90px;
+}
+#content>.cen_table>div>h2{ /*设置中间表格区域中标题的公共样式*/
+    border-bottom: 2px solid #d5d5d5;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+#content>.cen_table>div>ul{/*设置中间表格区域中标题ul的公共样式*/
+    background-color: #fff;
+}
+#content>.cen_table>.top>ul>li{ /*设置中间表格区域中第一个表格中li的样式*/
+    border-right: 1px #e1e1e1 solid;
+    width: 25%;
+    display: table-cell;
+}
+#content>.cen_table>.top>ul>li:last-child{/*设置中间表格区域中第一个表格中ul下最后一个li的样式*/
+    width: 50%;
+    border-right: 0;
+}
+#content>.cen_table>.center>ul>li{ /*设置中间表格区域中第二个表格中li的样式*/
+    border-right: 1px #e1e1e1 solid;
+    width: 9%;
+    display: table-cell;
+}
+#content>.cen_table>.center>ul>li:last-child{/*设置中间表格区域中第二个表格中ul下最后一个li的样式*/
+    border-right: 0;
+}
+#content>.cen_table>.center>p{/*设置中间表格区域中第二个表格中p的样式*/
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+#content>.cen_table>.btm>ul>li{ /*设置中间表格区域中第三个表格中li的样式*/
+    border-right: 1px #e1e1e1 solid;
+    width: 6%;
+    display: table-cell;
+}
+#content>.cen_table>.btm>ul>li:last-child{/*设置中间表格区域中第三个表格中ul下最后一个li的样式*/
+    border-right: 0;
+}
+#content>.cen_table>.btm>p{/*设置中间表格区域中第三个表格中p的样式*/
+    font-size: 12px;
+    margin: 20px 0;
+}
+#content>.cen_table>.btm>p:last-child{/*设置中间表格区域中第三个表格中最后一个p的样式*/
+    margin: 0;
+}
+#content>.cen_table>.btm>p>span{/*设置中间表格区域中第三个表格中p下的span的样式——小方块*/
+     display: inline-block;
+     width: 12px;
+     height: 12px;
+     background-color: #F8CC55;
+    margin-right: 10px;
+}
+#content>.cen_table>.btm>p>span:last-child{/*设置中间表格区域中第三个表格中p的span的样式——小方块*/
+     background-color: #D3D3D3;
+     margin-right: 10px;
+    margin-left: 20px;
+}
+#content>.cen_table>div>ul>li>ul{/*设置中间表格区域中所有表格中ul下li中的ul的样式*/
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+#content>.cen_table>div>ul>li>ul>li:first-child{/*设置中间表格区域中所有表格中ul下li中的ul中的第一个li的样式——标题*/
+    border-bottom: 1px #bebebe solid;
+    line-height: 60px;
+}
+#content>.cen_table>div>ul>li>ul>.bg_yellow{/*设置中间表格区域中所有表格中ul下li中的ul中的第一个li中前两个li的背景——鸡蛋、牛奶*/
+    background-color: #F8CC55;
+}
+#content>.cen_table>.btm>ul>li>ul>li:nth-child(2){/*设置中间表格区域中第三个中ul下li中的ul中的第二个li的样式——内容*/
+    border-bottom: 1px #bebebe solid;
+    line-height: 60px;
+}
+#content>.cen_table>div>ul>li>ul>li:last-child{/*设置中间表格区域中所有表格中ul下li中的ul中的最后一个li的样式——内容*/
+    padding: 12px;
+}
+#content>.bnr>.top{ /*设置底部第一个bnr两个图所在div的样式*/
+    width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+#content>.bnr>.top>.right{/*设置底部第一个bnr左边div的样式*/
+    float: right;
+}
+#content>.bnr>.top>.left{/*设置底部第一个bnr右边div的样式*/
+    float: left;
+}
+#content>.bnr>.top>.right>a>img:hover{/*设置底部第一个bnr右边div鼠标悬停的样式*/
+    opacity: 0.8;
+}
+#content>.bnr>.top>.left>a>.btn_bg{/*设置底部第一个bnr左边div中按钮的样式*/
+    width: 530px;
+    height: 70px;
+    line-height: 70px;
+    margin-top: 15px;
+    background: #fff url("../img/products/header_icon_01.png") no-repeat 190px;
+    text-align: center;
+    border: 1px #c8c8c8 solid;
+    color: #222222;
+}
+#content>.bnr>.top>.left>a>.btn_bg:hover{/*设置底部第一个bnr左边div中按钮的鼠标悬停样式*/
+    background: #600624 url("../img/products/header_icon_01_w.png") no-repeat 190px;
+    border: 0;
+    color: #fff;
+}
+#content>.bnr>.top:after{/*整个内容区域中下部分bnr图中第一个div后添加diiv清除浮动防止高度坍塌*/
+    content: "";
+    display: block;
+    clear: both;
+}
+#content>.bnr>.btm{  /*设置底部第二个bnr两个图所在div的样式*/
+    width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+#content>.bnr>.btm>.right{/*设置底部第二个bnr右边div的样式*/
+    float: right;
+}
+#content>.bnr>.btm>.right:hover{/*设置底部第二个bnr右边div的样式*/
+    opacity: 0.8;
+ }
+#content>.bnr>.btm>.left{/*设置底部第二个bnr右边div的样式*/
+    float: left;
+}
+#content>.bnr>.btm>.left:hover{/*设置底部第二个bnr右边div的样式*/
+    opacity: 0.8;
+}
+#content>.bnr>.btm:after{/*整个内容区域中下部分bnr图中第二个div后添加diiv清除浮动防止高度坍塌*/
+    content: "";
+    display: block;
+    clear: both;
+}
+.footer_font{   /*设置footer中字体的公共样式*/
+    color: #fff;
+    font-size: 12px;
+}
+#footer>.footer_top>.top{/*设置footer上半部分中上部分大div的样式*/
+    width: 1024px;
+    padding-top: 70px;
+    padding-bottom: 32px;
+    margin: auto;
+}
+#footer>.footer_top>.top>.left{/*设置footer上半部分中上左边div的样式*/
+    float: left;
+    margin-right: 70px;
+}
+#footer>.footer_top>.top>.left>h2{/*设置footer上半部分中上左边div中标题的样式*/
+    font-size: 42px;
+    color: #600624;
+    padding-bottom: 8px;
+}
+#footer>.footer_top>.top>.left>p{/*设置footer上半部分中上左边div中文字的样式*/
+    font-size: 16px;
+}
+#footer>.footer_top>.top>.right{/*设置footer上半部分中上右边div的样式*/
+    float: left;
+}
+#footer>.footer_top>.top>.right>ul>li{/*设置footer上半部分中上右边div中ul下li的样式*/
+    float: left;
+    width: 78px;
+    height: 78px;
+    margin: 0 28px 0 0;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+}
+#footer>.footer_top>.top>.right>ul>li>a>img{/*设置footer上半部分中上右边div中ul下li中图片的样式*/
+    width: 100%;
+}
+#footer>.footer_top>.top:after{/*整个footer上半部分的上部分添加div清除浮动防止高度坍塌*/
+    content: "";
+    display: block;
+    clear: both;
+}
+#footer>.footer_top>.btm{   /*设置footer上半部分中下部分大div的样式*/
+    width: 1024px;
+    text-align: center;
+    margin: 0 auto 30px;
+}
+#footer>.footer_top>.btm>ul>li{   /*设置footer上半部分中下部分中li的样式*/
+    float: left;
+}
+#footer>.footer_top>.btm>ul>li+li{ /*设置footer上半部分中下部分中li的样式*/
+    margin-left: 10px;
+}
+#footer>.footer_top>.btm>ul>li>a>.bg{ /*设置footer上半部分中下部分中li中背景div的样式——登入*/
+    padding-left: 20px;
+    height: 90px;
+    width: 310px;
+    background: #f5f5f5;
+    position: relative;
+}
+#footer>.footer_top>.btm>ul>li>a>.bg>div:first-child{/*设置footer上半部分中下部分中li中存放图片的div的公共样式*/
+    background-size:100%;
+    width: 59px;
+    height: 59px;
+    margin-right: 15px;
+    float: left;
+    position: relative;
+    margin-top: -30px;
+    top: 50%;
+}
+#footer>.footer_top>.btm>ul>li>a>.bg>.icon_faq{/*设置footer上半部分中下部分中li中存放的contact图片*/
+    background: url("../img/products/footer/icon_contact.png") no-repeat;
+}
+#footer>.footer_top>.btm>ul>li>a>.bg>.icon_mail{
+    background: url("../img/products/footer/icon_mail.png") no-repeat;/*设置footer上半部分中下部分中li中存放的mail图片*/
+}
+#footer>.footer_top>.btm>ul>li>a>.bg>.icon_shop{
+    background: url("../img/products/footer/icon_shop.png") no-repeat;/*设置footer上半部分中下部分中li中存放的shop图片*/
+}
+#footer>.footer_top>.btm>ul>li>a>.bg>.wenzi{/*设置footer上半部分中下部分中li中文字的公共样式*/
+    height: 90px;
+    float: left;
+    position: relative;
+    margin-top: -20px;
+    top: 50%;
+}
+#footer>.footer_top>.btm>ul>li>a>.bg>.wenzi>p:first-child{/*设置footer上半部分中下部分中li中标题样式*/
+    font-size: 18px;
+    font-weight: bold;
+    color: #600624;
+}
+#footer>.footer_top>.btm>ul>li>a>.bg>.wenzi>p:nth-child(2){/*设置footer上半部分中下部分中li中文字样式*/
+    font-size: 12px;
+    color: #000;
+    text-align: left;
+}
+#footer>.footer_top>.btm:after{/*为整个footer上半部分中的下部分添加div清除浮动防止高度坍塌*/
+    content: "";
+    display: block;
+    clear: both;
+}
+#footer>.footer_top>.to_top{/*设置footer上半部分中返回顶部的div样式*/
+    margin-bottom: 18px;
+    position: relative;
+}
+#footer>.footer_top>.to_top>a>.bg{/*设置footer上半部分中返回顶部的div中img的背景样式*/
+    width: 28px;
+    height: 28px;
+    border-radius: 33px;
+    background-color: #b4b4b4;
+    float: right;
+}
+#footer>.footer_top>.to_top>a>.bg>img{/*设置footer上半部分中返回顶部的div中img的样式*/
+    width: 100%;
+}
+#footer>.footer_top>.to_top>a>p{/*设置footer上半部分中返回顶部的div中文字的样式*/
+    font-size: 16px;
+    color: #666;
+    float: right;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+#footer>.footer_top>.to_top:after{/*为整个footer的上半部分添加div清除浮动防止高度坍塌*/
+    content: "";
+    display: block;
+    clear: both;
+}
+#footer>.footer_top:after{/*为整个footer的上半部分添加div清除浮动防止高度坍塌*/
+    content: "";
+    display: block;
+    clear: both;
+}
+#footer>.footer_bottom{  /*设置footer下半部分的背景颜色*/
+    background-color: #600624;
+}
+#footer>.footer_bottom>.inner{/*设置footer下半部分中总内容区域的宽度，样式*/
+    width: 1024px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    position: relative;
+}
+#footer>.footer_bottom>.inner:after{ /*为整个footer的下半部分添加div清除浮动防止高度坍塌*/
+    content: "";
+    display: block;
+    clear: both;
+}
+#footer>.footer_bottom>.inner>.content{/*设置footer下半部分中内容区域(ul+底部)的宽度，样式*/
+    width: 844px;
+    float: right;
+    background-color: #600624;
+}
+#footer>.footer_bottom>.inner>.content>.top>div{/*设置footer下半部分中每一个包裹ul的div左浮动，为一行显示*/
+    float: left;
+    margin-right: 30px;
+}
+#footer>.footer_bottom>.inner>.content>.top>div:last-child{/*设置footer中下半部分最后一个包裹ul的无右边距*/
+    margin-right: 0;
+}
+#footer>.footer_bottom>.inner>.content>.top:after{/*为footer下半部分中上半部分的ul导航添加div清除浮动防止高度坍塌*/
+    content: "";
+    display: block;
+    clear: both;
+}
+#footer>.footer_bottom>.inner>.content>.top>div>p{/*设置footer下半部分中ul上方标题的样式*/
+    margin-bottom: 20px;
+}
+#footer>.footer_bottom>.inner>.content>.top>div>p>a{/*设置footer下半部分中ul上方标题的样式*/
+    color: #fff;
+    font-size: 16px;
+}
+#footer>.footer_bottom>.inner>.content>.top>.ul_center>.center_left{/*设置footer下半部分中第二个ul中的两个ul中左边ul的样式*/
+    float: left;
+    margin-right: 30px;
+}
+#footer>.footer_bottom>.inner>.content>.top>.ul_center>.center_right{/*设置footer下半部分中第二个ul中的两个ul中右边ul的样式*/
+    float: right;
+}
+#footer>.footer_bottom>.inner>.content>.btm{/*设置foooter下半部分中ul下方的指示和版权信息所在div的样式*/
+    width: 100%;
+    margin-top: 40px;
+}
+#footer>.footer_bottom>.inner>.content>.btm>ul>li{/*设置foooter下半部分中ul下方的指示栏的li样式*/
+    display: block;
+    width: auto;
+    height: auto;
+    margin-right: 18px;
+    float: left;
+}
+#footer>.footer_bottom>.inner>.content>.btm>p{/*设置foooter下半部分中ul下方的版权信息的样式*/
+    position: absolute;
+    right: 0;
+}
+#footer>.footer_bottom>.inner>.footer_logo{/*设置foooter下半部分中logo的样式*/
+    width: 144px;
+    margin: 0;
+}
+#footer>.footer_bottom>.inner>.footer_logo>a>img{/*设置foooter下半部分中logo图片的样式*/
+    width: 100%;
+}

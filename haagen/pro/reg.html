@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/login.css"/>
+		<link rel="stylesheet" href="css/reg.css"/>
+	</head>
+	<body >
+	<div id="header">
+		<div class="head_top">
+			<a href="index.html">
+				<img src="img/login/brand_logo_pc.jpg" alt=""/>
+			</a>
+			<ul>
+				<li>
+					<a href="reg.html">
+						<p>新会员注册</p>
+					</a>
+				</li>
+				<li>
+					<a href="login.html">
+						<p>登录</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="head_btm"></div>
+	</div>
+	<div id="content">
+		<div class="title">
+			<div class="login">
+				<span><a href="javascript:history.back(-1)">&lt;</a></span>
+				<p>新会员注册</p>
+			</div>
+		</div>
+		<div class="cen">
+			<p>
+				<span>*</span>
+				必填项目 <br/>
+				<span class="mini_font">半角英数字</span>
+			</p>
+			<p>电话<span>*</span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="phone_err"></span></p>
+			<input type="text" id="phone" placeholder="电话"/><br />
+			<p>密码
+				<span>*&nbsp;&nbsp;&nbsp;&nbsp;<span id="upwd_err"></span></span>
+				<span class="mini_font">6到18个字母数字下划线</span>
+			</p>
+			<input type="password" id="upwd" placeholder="密码" /><br />
+			<p>用户名
+				<span>*</span>
+				<span class="mini_font">最多15个字符</span>
+			</p>
+			<input type="text" id="uname" placeholder="用户名" /><br />
+			<p>邮箱
+				<span>*</span>
+				<span class="mini_font">正确邮箱格式</span>
+			</p>
+			<input type="text" id="email" placeholder="邮箱" /><br />
+			<p>性别<span>*</span></p>
+			<input type="radio" id="man" name="gender"/><label for="man">男</label>
+			<input type="radio" id="woman" name="gender"/><label for="woman">女</label><br/>
+			<input type="checkbox" class="accept_mail" id="accept_mail">
+			<label for="accept_mail" class="accept_mail">接受邮件</label><br/>
+			<p class="tips">
+				·电子邮件地址用于发送电子邮件杂志（产品信息，交易等）。<br/>
+				·完成注册后，“注册完成电子邮件”将被发送到注册的电子邮件地址。<br/>
+				·请确保您能收到电子邮件。<br/>
+				·电子邮件的注册是免费的，但连接费和通信费将由客户承担。
+			</p>
+			<button onclick="reg()" class="btn_login">同意并注册</button>
+		</div>
+		<div class="btm">
+			<div class="top">
+				<span>或者</span>
+				<p>使用您的SNS帐户登录</p>
+			</div>
+			<ul>
+				<li>
+					<a href="">
+						<img src="img/login/twitter--white.svg" alt=""/>
+						使用Twitter帐户
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/login/facebook--white.svg" alt=""/>
+						使用Facebook帐户
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="top">
+			<p><a href="">返回顶部</a></p>
+		</div>
+		<div class="btm">
+			<div class="logo">
+				<img src="img/login/brand_logo_footer.png" alt=""/>
+			</div>
+			<div class="content">
+				<p>©Häagen-Dazs Japan，Incorporated。保留所有权利。</p>
+				<ul>
+					<li><a href="">常问问题</a></li>
+					<li>|</li>
+					<li>
+						<a href="">
+							哈根达斯日本&nbsp;
+							<img src="img/login/common_external.jpg" alt=""/>
+						</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="">
+							隐私政策&nbsp;
+							<img src="img/login/common_external.jpg" alt=""/>
+						</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="">
+							社交媒体政策&nbsp;
+							<img src="img/login/common_external.jpg" alt=""/>
+						</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="">
+							联系我们&nbsp;
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		<script type="text/javascript">
+		 	var isReg=true;
+				function reg(){
+					isReg=true;
+					var $upwd=upwd.value;
+					console.log($upwd)
+					var $uname=uname.value;
+					var $phone=phone.value;
+					var $email=email.value;
+					var $gender="1";
+					var reg=/^1[0-9]{10}$/;
+					var regps=/^[\w]{6,18}$/;
+					var regem=/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((.[a-zA-Z0-9_-]{2,3}){1,2})$/;
+					console.log(regps.test($upwd))
+					if(man.checked){
+						$gender="1";
+					}else if(woman.checked){
+						$gender="0";
+					}
+					if(!$uname){
+						isReg=false;
+						return;
+					}
+					if(!reg.test($phone)){
+						phone_err.innerHTML="手机号格式错误";
+						isReg=false;
+						return;
+					};
+					if(!regps.test($upwd)){
+						alert("密码格式需包含数字、字母、下划线的6-18位");
+						isReg=false;
+						return;
+					};
+					if(!regem.test($email)){
+						alert("邮箱格式错误");
+						isReg=false;
+						return;
+					};
+					if(!accept_mail.checked){
+						alert("请阅读并勾选同意用户注册协议");
+						isReg=false;
+						return;
+					}
+					var xhr=new XMLHttpRequest();//1.创建xhr
+					xhr.onreadystatechange=function(){
+					  if(xhr.readyState==4&&xhr.status==200){//当响应接受完成并且状态码为200时
+							var result=xhr.responseText;//创建result接受响应回来的数据
+							if(result=="1"){
+								location.href="http://127.0.0.1:8080/login.html"
+							}else if(result=="0"){
+							  alert("注册失败");
+								return;
+							}
+						};
+					};//绑定监听，创建监听
+					//2.打开连接，创建请求
+					xhr.open("post","/pro/api/v1/register",true);
+					//3.发送请求
+					var formdata="&upwd="+$upwd+"&phone="+$phone+"&uname="+$uname+"&gender="+$gender+"&email="+$email;//创建请求主体
+					xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");//设置请求头信息，让参数可以带特殊符号
+					if(isReg){
+						xhr.send(formdata);
+					}else{
+						return;
+						}//发送请求
+				}
+				function checkphone(){
+					var $phone=phone.value;
+					var xhr=new XMLHttpRequest();//创建异步对象
+					xhr.onreadystatechange=function(){//绑定监听
+						if(xhr.readyState==4&&xhr.status==200){
+						  var result=xhr.responseText;
+							if(result=="0"){
+								phone_err.innerHTML="该号码已注册";
+								isReg=false;
+								return;
+							 //alert("该号码已注册");
+							}
+						}
+					}
+					//打开连接，创建请求
+					xhr.open("get",`/pro/api/v1/checkphone/${$phone}`,true);
+					//发送请求
+					xhr.send();
+				}
+			</script>
+	</body>

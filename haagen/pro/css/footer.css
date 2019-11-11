@@ -1,0 +1,90 @@
+#footer>.link_bg{              /*设置底部上部分导航背景颜色，高度和内边距*/
+    background-color: #600624;
+    padding: 40px;
+    margin-bottom: 70px;
+}
+#footer_link>ul>li>a>div{
+    width: 168px;
+    height: 168px;
+    top: 100px;
+    border: 5px solid #000;
+}
+#footer_link>ul>li>a>.vanilla_close{             /* 设置li中vanilla图片关闭状态的默认背景*/
+    background: url("../img/zong/lineup_vanilla_close.png");
+}
+#footer_link>ul>li>a>.vanilla_close:hover{       /* 设置li中vanilla图片鼠标悬停时的背景*/
+    background-image: url("../img/zong/lineup_vanilla_open.png");
+}
+#footer_link>ul>li>a>.strawberry_close{           /* 设置li中strawberry图片关闭状态的默认背景*/
+    background: url("../img/zong/lineup_strawberry_close.png");
+}
+#footer_link>ul>li>a>.strawberry_close:hover{     /* 设置li中strawberry图片鼠标悬停时的背景*/
+    background-image: url("../img/zong/lineup_strawberry_open.png");
+}
+#footer_link>ul>li>a>.green_close{                /* 设置li中green图片关闭状态的默认背景*/
+    background: url("../img/zong/lineup_green_close.png");
+}
+#footer_link>ul>li>a>.green_close:hover{          /* 设置li中green图片鼠标悬停时的背景*/
+    background-image: url("../img/zong/lineup_green_open.png");
+}
+#footer_link>ul>li>a>.cookie_close{              /* 设置li中cookie图片关闭状态的默认背景*/
+    background: url("../img/zong/lineup_cookie_close.png");
+}
+#footer_link>ul>li>a>.cookie_close:hover{        /* 设置li中cookie图片鼠标悬停时的背景*/
+    background-image: url("../img/zong/lineup_cookie_open.png");
+}
+#footer_link>ul>li>a>.macadamia_close{           /* 设置li中macadamia图片关闭状态的默认背景*/
+    background: url("../img/zong/lineup_macadamia_close.png");
+}
+#footer_link>ul>li>a>.macadamia_close:hover{     /* 设置li中macadamia图片鼠标悬停时的背景*/
+    background-image: url("../img/zong/lineup_macadamia_open.png");
+}
+#footer_link>ul>li>a>.crisp_close{               /* 设置li中crisp图片关闭状态的默认背景*/
+    background: url("../img/zong/lineup_crisp_close.png");
+}
+#footer_link>ul>li>a>.crisp_close:hover{         /* 设置li中crisp图片鼠标悬停时的背景*/
+    background-image: url("../img/zong/lineup_crisp_open.png");
+}
+#footer>.link_bg>.footer_link>a:hover{
+    opacity: 0.7;
+}
+#footer>.footer_content{             /*设置底部内容区域居中*/
+    text-align: center;
+    margin: auto;
+}
+#footer>.footer_content>ul{          /*设置底部内容区域中ui的公共样式*/
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+#footer>.footer_content>.top_ul{        /*设置底部内容区域中第一个ul的样式*/
+    margin-bottom: 60px;
+}
+#footer>.footer_content>ul>li{        /*设置底部内容区域中li的公共样式*/
+    float: left;
+    text-align: center;
+}
+#footer>.footer_content>.top_ul>li{     /*设置底部内容区域中第一个ul中li的样式*/
+    width: 90px;
+}
+#footer>.footer_content>.bottom_ul>li+li{   /*设置底部内容区域中第二个ul中li的样式*/
+    margin-left: 40px;
+}
+#footer>.footer_content>.bottom_ul>li>.max_font{   /*设置底部内容区域中第二个ul中li中字体的样式*/
+    color: #600624;
+    font-size: 16px;
+    font-weight: bold;
+}
+#footer>.footer_content>.min_font{   /*设置底部内容区域中版权字体的样式*/
+    color: #600624;
+    font-size: 12px;
+}
+#footer>.footer_content>a>.top{       /*设置底部内容区域中返回顶部图标的样式*/
+    margin: 30px 0;
+}
+#footer>.footer_content>.but_cook{       /*设置底部内容区域中背景图的样式*/
+    float: left;
+    margin-left: 480px;
+    margin-top: -140px;
+}

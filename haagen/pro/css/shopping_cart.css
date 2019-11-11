@@ -1,0 +1,80 @@
+#content>.title>.login>span {
+    margin-left: -100px;
+}
+#content>.title>.login>span>a{
+    color: #000;
+}
+#content>div>.car_title{/*���ù��ﳵ����ul��ʽ*/
+    width: 1000px;
+    margin: 30px auto 0;
+    height: 30px;
+}
+#content>div>ul>li{/*���ù��ﳵ����ul��ÿһ��li��ʽ*/
+    width: 137px;
+    text-align: center;
+    padding-left: 10px;
+}
+#content>div>ul>li:nth-child(1){/*���ù��ﳵ����ul�е�һ��li��ʽ����ȫѡ*/
+    text-align: left;
+}
+#content>div>ul>li:nth-child(2){/*���ù��ﳵ����ul�еڶ���li��ʽ������Ʒ��Ϣ*/
+    width: 250px;
+    text-align: left;
+}
+#content>.product_all{/*������Ʒ�е���ʽ*/
+    width: 1000px;
+    margin: auto;
+    border-bottom: 1px solid #222222;
+}
+#content>.product_all>.product{/*������Ʒ�е���ʽ*/
+    border: 1px solid #222222;
+    border-bottom: 0;
+    height: 70px;
+}
+#content>.product_all>.product>li+li{/*������Ʒ�е���ʽ*/
+    line-height: 70px;
+}
+#content>.product_all>.product>li>label>img{/*������Ʒ����ͼ��ʽ*/
+    position: relative;
+    width: 40%;
+    top:10px;
+    left: 10px;
+}
+#content>.product_all>.product>li>button{/*���������а�ť����ʽ����  +��-*/
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+#content>.product_all>.product>li>.number{/*������������������ʽ*/
+    width: 30px;
+    height: 20px;
+    border: 1px solid #aaaaaa;
+    text-align: center;
+}
+#content>.sum{/*���ý���������ʽ*/
+    width: 1000px;
+    height: 50px;
+    margin: 20px auto 0;
+    background-color: #eee;
+    line-height: 50px;
+}
+#content>.sum>span{/*���ý�������ȫѡ����ʽ����ȫѡ*/
+    float: left;
+    margin-left: 10px;
+}
+#content>.sum>.settlement{/*���ý������н��㰴ť����ʽ��������*/
+     float: right;
+    background-color: #999;
+    width: 100px;
+    text-align: center;
+ }
+#content>.sum>p{/*���ý�����������ʽ���� ��ѡ��Ʒ0�� �ϼƣ������˷ѣ�����0.00*/
+    float: right;
+    margin-right: 20px;
+}
+#footer{/*��footer�̶���ҳ���·�*/
+    position: fixed;
+    bottom: 18px;
+}
+
+
